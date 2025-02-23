@@ -5,8 +5,8 @@ metadata:
   name: minio
   namespace: flux-system
 spec:
-  interval: 10m0s
-  path: ./clusters/my-cluster
+  interval: 15s
+  path: ./kustomize
   prune: true
   sourceRef:
     kind: GitRepository
