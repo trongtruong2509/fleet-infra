@@ -1,2 +1,2 @@
-argo-cd:
+argocd:
   version: 5.46.4
