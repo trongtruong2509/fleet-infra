@@ -5,7 +5,7 @@ metadata:
   name: argocd
   namespace: argo-cd
 spec:
-  interval: 5m
+  interval: 1m
   chart:
     spec:
       chart: argo-cd
