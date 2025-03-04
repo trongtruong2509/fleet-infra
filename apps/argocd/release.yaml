@@ -1,0 +1,19 @@
+---
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: argocd
+  namespace: argo-cd
+spec:
+  interval: 5m
+  chart:
+    spec:
+      chart: argo-cd
+      version: "{{ .Values.argo-cd.version }}" # Uses value from values.yaml
+      sourceRef:
+        kind: HelmRepository
+        name: argo-cd
+  values:
+    global:
+      image:
+        tag: latest
