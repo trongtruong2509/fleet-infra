@@ -8,3 +8,5 @@ patches: # use patches when you want to modify the app rather thatn using defaul
   - path: podinfo-values.yaml
     target:
       kind: HelmRelease
+      name: podinfo
+      namespace: podinfo
