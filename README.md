@@ -1,4 +1,4 @@
-# Flux Repository for AKS
+# Demo Flux Repository for AKS
 
 This is repository for FluxCD in AKS with terraform `azurerm_kubernetes_flux_configuration`
 
