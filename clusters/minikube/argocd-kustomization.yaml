@@ -5,7 +5,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 5m
-  path: ./apps/argocd
+  path: ../../apps/argocd
   prune: true
   sourceRef:
     kind: GitRepository
