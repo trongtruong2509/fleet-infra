@@ -1,13 +1,12 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: podinfo
+  name: flux-system
   namespace: flux-system
 spec:
-  interval: 1m
-  path: ./clusters/minikube/podinfo
+  interval: 10m0s
+  path: ./clusters/minikube
   prune: true
   sourceRef:
     kind: GitRepository
     name: flux-system
-  targetNamespace: default
