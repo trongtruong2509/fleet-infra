@@ -5,6 +5,7 @@ metadata:
   name: argocd
   namespace: argocd
 spec:
+  releaseName: argocd
   interval: 5m
   chart:
     spec:
