@@ -1,27 +1,27 @@
-apiVersion: helm.toolkit.fluxcd.io/v2beta1
-kind: HelmRelease
-metadata:
-  name: grafana
-  namespace: grafana
-spec:
-  # Cluster-specific values override
-  values:
-    # Minikube specific settings
-    ingress:
-      enabled: true
-      hosts:
-        - grafana.minikube.local
+# apiVersion: helm.toolkit.fluxcd.io/v2beta1
+# kind: HelmRelease
+# metadata:
+#   name: grafana
+#   namespace: grafana
+# spec:
+#   # Cluster-specific values override
+#   values:
+#     # Minikube specific settings
+#     ingress:
+#       enabled: true
+#       hosts:
+#         - grafana.minikube.local
         
-    # Resource limits appropriate for minikube
-    resources:
-      limits:
-        cpu: 300m
-        memory: 512Mi
-      requests:
-        cpu: 100m
-        memory: 128Mi
+#     # Resource limits appropriate for minikube
+#     resources:
+#       limits:
+#         cpu: 300m
+#         memory: 512Mi
+#       requests:
+#         cpu: 100m
+#         memory: 128Mi
         
-    # Set persistence to false for development/testing
-    persistence:
-      enabled: true
-      size: 1Gi
+#     # Set persistence to false for development/testing
+#     persistence:
+#       enabled: true
+#       size: 1Gi

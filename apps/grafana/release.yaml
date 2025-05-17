@@ -16,10 +16,6 @@ spec:
   values:
     service:
       type: ClusterIP
-      
-    admin:
-      existingSecret: grafana-admin-credentials
-      userKey: admin-user
-      passwordKey: admin-password
+
       
 
